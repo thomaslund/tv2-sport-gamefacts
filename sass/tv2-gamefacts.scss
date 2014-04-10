@@ -1,0 +1,134 @@
+%clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+%focus{
+	&:focus{
+		background-color: #b4e7fc;
+	};
+}
+
+.module-gamefacts {
+	
+	h3{
+		float: left;
+		width: 50%;
+		padding: 1em 1.5em 0.25em 1.5em;
+
+		font-family: 'flama_semi_condensed';
+		font-weight: 900;
+
+		&:nth-child(1){
+			text-align: right;
+		}
+
+	}
+
+	ul{
+		clear: both;
+		padding: 0;
+		@extend %clearfix;
+		position: relative;
+
+		li{
+			padding: 0.25em;
+			list-style: none;
+			clear: both;
+			border-top: 1px solid #ccc;
+			@extend %clearfix;
+
+			.score,img,span,time{
+				vertical-align: top;
+			}
+
+			article{
+				width: 50%;
+				@extend %clearfix;
+			}
+
+			.names-involved{
+				display: inline-block;
+				text-align: right;
+			}
+			strong{
+				font-weight: 700;
+			}
+
+			img{
+				height: 1em;
+				margin: 0.25em;
+			}
+
+			a{
+				color: #000; //should be moved to bootstrap to account for bg-colors
+			}
+
+			.score{
+				position: absolute;
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				-moz-transform: translateX(-50%);
+				transform: translateX(-50%);
+
+				img{
+					height: 1.4em;
+					margin: 0;
+				}
+			}
+
+			&.home{
+				article{
+					
+					text-align: right;
+
+					.fact-data{
+						float:right;
+						padding-right: 2.75em;
+					}
+					.score,.names-involved,time{
+						float: left;
+					}
+					
+					.score img{
+						position: absolute;
+						left: -1.25em;
+					}
+					
+				}
+			}
+			&.away{
+				article{
+					float: right;
+					text-align: left;
+
+					.fact-data{
+						float:left;
+						padding-left: 2.75em;
+					}
+					.score,.names-involved,time{
+						float: right;
+					}
+					.score img{
+						position: absolute;
+						right: -1.25em;
+
+					}
+				}
+			}
+		}
+	}
+
+	&.tiny{
+		//TODO: create a nice list view;
+	}
+
+}

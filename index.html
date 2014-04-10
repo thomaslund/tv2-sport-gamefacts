@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <title>Gamefacts - test</title>
+  
+  <link type="text/css" rel="stylesheet" href="http://static.cdn.tv2.no/s/stylesheets/tv2bootstrap.css?v=1.1.30">
+  <link rel="stylesheet" href="http://contentbox.tv2.no/sportsdata-bundle/assets/css/sportsdata.css">
+  <link rel="stylesheet" href="css/tv2-gamefacts.css"/>
+
+</head>
+<body>
+		<section class="section">
+
+
+
+
+<!-- start module markup --> 
+
+		 	<section class="sportsdata-widget module-gamefacts">
+			 	<h3 class="t20">Manchester City</h3>
+			 	<h3 class="t20">West Bromwich</h3>
+			 	<ul>
+			 		<li class="home">
+			 			<article>
+				 			<time datetime="18:35">35'</time>
+							<div class="fact-data">
+					 			<div class="names-involved">
+					 				<div><a href="#/link-to-video"><strong class="icon-play">Mål:</strong> Isaac Newton</a></div>
+					 				<div class=" assist">(<strong>Assist:</strong> Higgs)</div>
+					 			</div>
+					 			
+					 			<strong class="score">
+				 					<img src="img/icon-goal.svg" alt="Mål" title="Mål">
+				 					22-30
+				 				</strong>
+					 			
+				 			</div>
+				 		</article>
+			 		</li>
+			 		<li class="away">
+			 			<article>
+				 			<time datetime="18:29">29'</time>
+							<div class="fact-data">
+					 			<div class="names-involved">
+					 				<div><a href="#/link-to-video"><strong class="icon-play">Mål:</strong> Niels Bohr</a></div>
+					 				<div class="assist">(<strong>Assist:</strong> Franklin)</div>
+					 			</div>
+					 			<strong class="score">
+					 				<img src="img/icon-goal.svg" alt="Mål" title="Mål">
+				 					0-3
+				 				</strong>
+				 			</div>
+				 		</article>
+			 		</li>
+			 		<li class="away">
+			 			<article>
+				 			<time datetime="18:24">24'</time>
+							<div class="fact-data">
+					 			<div class="names-involved">
+					 				<a href="#/link-to-player">Alexander Fleming</a>
+					 			</div>
+					 			<img src="img/icon-yellow_card.svg" alt="Gult kort" title="Gult kort">
+				 			</div>
+				 		</article>
+			 		</li>
+
+			 		<li class="home">
+			 			<article>
+				 			<time datetime="18:19">19'</time>
+							<div class="fact-data">
+					 			<div class="names-involved">
+					 				<a href="#/link-to-video"><strong class="icon-play">Rødt kort:</strong> Johannes Kepler</a>
+					 			</div>
+					 			<img src="img/icon-red_card.svg" alt="Rødt kort" title="Rødt kort">
+				 			</div>
+				 		</article>
+			 		</li>
+			 		<li class="away">
+			 			<article>
+				 			<time datetime="18:19">19'</time>
+							<div class="fact-data">
+					 			<div class="names-involved">
+					 				<a href="#/link-to-video"><strong class="icon-play">Rødt kort:</strong> Louis Pasteur</a>
+					 			</div>
+					 			<img src="img/icon-red_card.svg" alt="Rødt kort" title="Rødt kort">
+				 			</div>
+				 		</article>
+			 		</li>
+			 		<li class="home">
+			 			<article>
+				 			<time datetime="18:02">2'</time>
+							<div class="fact-data">
+					 			<div class="names-involved">
+					 				<div>
+						 				<a href="#/link-to-player">Nikolaus Copernicus</a><img src="img/icon-player_out.svg" alt="Spiller ut" title="Spiller ut">
+					 				</div>
+					 				<div><a href="#/link-to-player">Charles Darwin</a><img src="img/icon-player_in.svg" alt="Spiller inn" title="Spiller inn"></div>
+					 			</div>
+					 			
+				 			</div>
+				 		</article>
+			 		</li>
+			 	</ul>
+
+		  	</section>
+
+<!-- end module markup -->
+
+
+		</section>
+
+
+
+	<!-- //testing purposes -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		(function($){
+
+			function resizedw(){
+				//breakpoints for module
+				var module = $('.module-gamefacts'),
+					w = module.width(),
+					options = {
+						tiny: 390,
+						narrow: 600,
+						medium: 800,
+						normal: 930
+					};
+
+				//set desired layout class
+				if (w < options.tiny) {
+					toggleLayoutClasses(module, 'tiny');
+				}
+				else if(w > options.tiny && w < options.narrow){
+					toggleLayoutClasses(module, 'narrow');
+				}
+				else if(w > options.narrow && w < options.medium){
+					toggleLayoutClasses(module, 'medium');
+				}
+				else if(w > options.medium){
+					toggleLayoutClasses(module, 'normal');
+				}
+				else {
+					console.log(w, ' is out of scope for resizedw()');
+					//error handle or fallback to magic tricks
+				}
+			}
+
+
+			/* simple function for toggling layout classes for jquery elem */
+			function toggleLayoutClasses(elem, cl){
+				var classes = ['tiny', 'narrow', 'medium', 'normal'];
+				for (var i = 0; i < classes.length; i++){
+					(classes[i]!= cl && elem.hasClass(classes[i]) ? elem.removeClass(classes[i]) : elem.addClass(cl));
+				}
+			}
+
+
+			//resize event throttler
+			var resizeThrottle;
+			window.onresize = function(){
+			  clearTimeout(resizeThrottle);
+			  resizeThrottle = setTimeout(resizedw, 200);
+			};
+
+
+			//init layout class
+			resizedw();
+
+
+			/* temp js for toggling lineupactive class and set data-lineup attribute  - TODO: move to backbone */
+			$('body').on('click', '.module-lineup button[role="tab"]', function(e){
+
+				var activeLineup = ($(this).hasClass('lineup-home-tab') ? 'lineup-home' : 'lineup-away');
+
+				$(this).removeClass('lineup-inactive').siblings('button').addClass('lineup-inactive');
+
+				$(this).parents('.module-lineup').attr('data-lineup', activeLineup);
+
+			})
+			.on('click', '.module-lineup .lineup-field a', function(e){
+				e.preventDefault(); //prevent URI change
+				//trigger desired event to open player profile
+			});
+
+
+
+
+		})(jQuery);
+	</script
+</body>
+</html>
