@@ -118,3 +118,7 @@
 .module-gamefacts ul li.away article .names-involved img {
   float: left;
 }
+/* line 138, ../sass/tv2-gamefacts.scss */
+.module-gamefacts.tiny .assist {
+  display: none;
+}

@@ -134,6 +134,10 @@
 
 	&.tiny{
 		//TODO: create a nice list view;
+
+		.assist{
+			display: none;
+		}
 	}
 
 }
