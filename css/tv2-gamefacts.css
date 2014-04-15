@@ -75,87 +75,83 @@
   -moz-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-/* line 91, ../sass/tv2-gamefacts.scss */
-.module-gamefacts ul li .score img {
-  height: 1.4em;
-  margin: 0;
-}
-/* line 98, ../sass/tv2-gamefacts.scss */
+/* line 93, ../sass/tv2-gamefacts.scss */
 .module-gamefacts ul li.home article {
   text-align: right;
 }
-/* line 102, ../sass/tv2-gamefacts.scss */
+/* line 97, ../sass/tv2-gamefacts.scss */
 .module-gamefacts ul li.home article .fact-data {
   float: right;
   padding-right: 2.75em;
 }
-/* line 106, ../sass/tv2-gamefacts.scss */
+/* line 101, ../sass/tv2-gamefacts.scss */
 .module-gamefacts ul li.home article .score, .module-gamefacts ul li.home article .names-involved, .module-gamefacts ul li.home article time {
   float: left;
 }
-/* line 110, ../sass/tv2-gamefacts.scss */
+/* line 105, ../sass/tv2-gamefacts.scss */
 .module-gamefacts ul li.home article .score img {
   position: absolute;
-  left: -1.25em;
+  left: -1.4em;
 }
-/* line 115, ../sass/tv2-gamefacts.scss */
+/* line 110, ../sass/tv2-gamefacts.scss */
 .module-gamefacts ul li.home article img {
   margin-right: 0;
 }
-/* line 122, ../sass/tv2-gamefacts.scss */
+/* line 117, ../sass/tv2-gamefacts.scss */
 .module-gamefacts ul li.away article {
   float: right;
   text-align: left;
 }
-/* line 126, ../sass/tv2-gamefacts.scss */
+/* line 121, ../sass/tv2-gamefacts.scss */
 .module-gamefacts ul li.away article .fact-data {
   float: left;
   padding-left: 2.75em;
 }
-/* line 130, ../sass/tv2-gamefacts.scss */
+/* line 125, ../sass/tv2-gamefacts.scss */
 .module-gamefacts ul li.away article .score, .module-gamefacts ul li.away article .names-involved, .module-gamefacts ul li.away article time {
   float: right;
 }
-/* line 133, ../sass/tv2-gamefacts.scss */
+/* line 129, ../sass/tv2-gamefacts.scss */
 .module-gamefacts ul li.away article .score img {
   position: absolute;
-  right: -1.25em;
+  right: -1.4em;
 }
-/* line 138, ../sass/tv2-gamefacts.scss */
+/* line 134, ../sass/tv2-gamefacts.scss */
 .module-gamefacts ul li.away article .names-involved img {
   float: left;
+  margin: 0.25em;
 }
-/* line 142, ../sass/tv2-gamefacts.scss */
+/* line 139, ../sass/tv2-gamefacts.scss */
 .module-gamefacts ul li.away article img {
   margin-left: 0;
 }
-/* line 152, ../sass/tv2-gamefacts.scss */
+/* line 150, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.tiny h3 {
   text-align: left;
   padding: 0.5em 0 0;
   width: inherit;
 }
-/* line 157, ../sass/tv2-gamefacts.scss */
+/* line 155, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.tiny h3:first-child {
   padding-left: 0.5em;
 }
-/* line 159, ../sass/tv2-gamefacts.scss */
+/* line 157, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.tiny h3:first-child:after {
   content: '\2014';
   padding: 0 0.5em;
 }
-/* line 168, ../sass/tv2-gamefacts.scss */
+/* line 166, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.tiny ul li.away,
 .module-gamefacts.tiny ul li.home {
   padding: 0;
   float: none;
 }
-/* line 172, ../sass/tv2-gamefacts.scss */
+/* line 170, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.tiny ul li.away article,
 .module-gamefacts.tiny ul li.home article {
   width: 100%;
 }
-/* line 174, ../sass/tv2-gamefacts.scss */
+/* line 172, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.tiny ul li.away article .fact-data, .module-gamefacts.tiny ul li.away article .score, .module-gamefacts.tiny ul li.away article .names-involved, .module-gamefacts.tiny ul li.away article time,
 .module-gamefacts.tiny ul li.home article .fact-data,
 .module-gamefacts.tiny ul li.home article .score,
@@ -163,12 +159,12 @@
 .module-gamefacts.tiny ul li.home article time {
   float: left;
 }
-/* line 178, ../sass/tv2-gamefacts.scss */
+/* line 176, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.tiny ul li.away article img,
 .module-gamefacts.tiny ul li.home article img {
   margin: 0.25em;
 }
-/* line 181, ../sass/tv2-gamefacts.scss */
+/* line 179, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.tiny ul li.away article .score,
 .module-gamefacts.tiny ul li.home article .score {
   left: inherit;
@@ -178,23 +174,23 @@
   width: 5em;
   -webkit-transform: translateX(0%);
 }
-/* line 189, ../sass/tv2-gamefacts.scss */
+/* line 187, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.tiny ul li.away article .score img,
 .module-gamefacts.tiny ul li.home article .score img {
   margin: 0 0.25em;
   position: static;
 }
-/* line 194, ../sass/tv2-gamefacts.scss */
+/* line 192, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.tiny ul li.away article .names-involved,
 .module-gamefacts.tiny ul li.home article .names-involved {
   text-align: left;
 }
-/* line 198, ../sass/tv2-gamefacts.scss */
+/* line 196, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.tiny ul li.away article .names-involved img,
 .module-gamefacts.tiny ul li.home article .names-involved img {
   float: none;
 }
-/* line 202, ../sass/tv2-gamefacts.scss */
+/* line 200, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.tiny ul li.away article .fact-data,
 .module-gamefacts.tiny ul li.home article .fact-data {
   padding: 0;
@@ -203,36 +199,36 @@
   width: 85%;
   text-align: left;
 }
-/* line 209, ../sass/tv2-gamefacts.scss */
+/* line 207, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.tiny ul li.away article .fact-data > img,
 .module-gamefacts.tiny ul li.home article .fact-data > img {
   float: right;
   vertical-align: top;
 }
-/* line 215, ../sass/tv2-gamefacts.scss */
+/* line 213, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.tiny ul li.away article time,
 .module-gamefacts.tiny ul li.home article time {
   padding-right: 0.5em;
   text-align: right;
   width: 15%;
 }
-/* line 228, ../sass/tv2-gamefacts.scss */
+/* line 226, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.narrow time {
   width: 15%;
 }
-/* line 231, ../sass/tv2-gamefacts.scss */
+/* line 229, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.narrow .fact-data {
   width: 85%;
 }
-/* line 233, ../sass/tv2-gamefacts.scss */
+/* line 231, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.narrow .fact-data .names-involved {
   float: none;
 }
-/* line 242, ../sass/tv2-gamefacts.scss */
+/* line 240, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.normal .home time {
   padding-left: 3em;
 }
-/* line 247, ../sass/tv2-gamefacts.scss */
+/* line 245, ../sass/tv2-gamefacts.scss */
 .module-gamefacts.normal .away time {
   padding-right: 3em;
 }

@@ -87,11 +87,6 @@
 				-webkit-transform: translateX(-50%);
 				-moz-transform: translateX(-50%);
 				transform: translateX(-50%);
-
-				img{
-					height: 1.4em;
-					margin: 0;
-				}
 			}
 
 			&.home{
@@ -109,7 +104,7 @@
 					
 					.score img{
 						position: absolute;
-						left: -1.25em;
+						left: -1.4em;
 					}
 
 					img{
@@ -130,18 +125,21 @@
 					.score,.names-involved,time{
 						float: right;
 					}
+
 					.score img{
 						position: absolute;
-						right: -1.25em;
+						right: -1.4em;
 
 					}
 					.names-involved img {
 						float: left;
+						margin:0.25em;
 					}
 
 					img{
 						margin-left: 0;
 					}
+					
 				}
 			}
 		}
